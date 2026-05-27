@@ -1,0 +1,26 @@
+{
+  "name": "@mid/shared-types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "clean": "rimraf dist .turbo"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@mid/eslint-config": "workspace:*",
+    "eslint": "^9.15.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5",
+    "rimraf": "^6.0.1"
+  }
+}
