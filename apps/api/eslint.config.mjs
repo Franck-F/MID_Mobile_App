@@ -6,6 +6,9 @@ import config from '@mid/eslint-config/node';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default [
+  {
+    ignores: ['dist', 'node_modules', 'coverage'],
+  },
   ...config,
   {
     languageOptions: {
