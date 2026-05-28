@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
 
 import { ConfigModule } from './config/config.module';
+import { HealthModule } from './health/health.module';
 import { LoggerModule } from './logging/logger.module';
 
 @Module({
-  imports: [ConfigModule, LoggerModule],
-  controllers: [],
-  providers: [],
+  imports: [ConfigModule, LoggerModule, HealthModule],
 })
 export class AppModule {}
