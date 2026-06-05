@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "health_controller_spec_health_controller_spec",
+      "label": "HealthController spec (Vitest)",
+      "file_type": "code",
+      "source_file": "apps/api/src/health/health.controller.spec.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "health_controller_spec_health_controller_spec",
+      "target": "health_controller_health_controller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/health/health.controller.spec.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "health_controller_spec_health_controller_spec",
+      "target": "health_controller_liveness",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/health/health.controller.spec.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "health_controller_spec_health_controller_spec",
+      "target": "health_controller_readiness",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/health/health.controller.spec.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

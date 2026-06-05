@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "nest_cli_nest_cli_config",
+      "label": "Nest CLI Configuration",
+      "file_type": "code",
+      "source_file": "apps/api/nest-cli.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nest_cli_tool",
+      "label": "NestJS CLI",
+      "file_type": "code",
+      "source_file": "apps/api/nest-cli.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "nest_cli_nest_cli_config",
+      "target": "nest_cli_tool",
+      "relation": "configures",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/nest-cli.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "nest_cli_tool",
+      "target": "package_nestjs_framework",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "apps/api/nest-cli.json",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

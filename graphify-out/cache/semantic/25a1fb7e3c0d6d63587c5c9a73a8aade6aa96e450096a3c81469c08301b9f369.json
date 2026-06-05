@@ -1,0 +1,439 @@
+{
+  "nodes": [
+    {
+      "id": "design_spec_doc",
+      "label": "MID Mobile App Design Spec",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-05-27",
+      "author": "Franck",
+      "contributor": null
+    },
+    {
+      "id": "design_spec_mid_event",
+      "label": "Marathon International de Douala (MID)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "1. Contexte",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_tara",
+      "label": "TARA Sport and Events (organisateur)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "2. Stakeholders",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_solo_dev",
+      "label": "Contrainte d\u00e9veloppement solo",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "4. Contraintes",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_modular_monolith",
+      "label": "Architecture monolithe modulaire + service d\u00e9di\u00e9",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.2 Architecture monolithe modulaire + service d\u00e9di\u00e9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_supabase_managed",
+      "label": "Pattern Supabase = infrastructure manag\u00e9e",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.3 Pattern Supabase = infrastructure manag\u00e9e (V2)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_monorepo_org",
+      "label": "Organisation monorepo (Turborepo + pnpm)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.4 Organisation monorepo",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_api_nestjs",
+      "label": "API NestJS (monolithe modulaire, 10 modules)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7. API NestJS",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_auth_flow",
+      "label": "Auth flow Supabase JWT via JWKS",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7.3 Auth flow d\u00e9taill\u00e9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_bullmq_jobs",
+      "label": "Background jobs BullMQ",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7.4 Background jobs (BullMQ)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_tracking_service",
+      "label": "Service de tracking temps r\u00e9el (Socket.io)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "8. Service de tracking temps r\u00e9el",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_interpolation",
+      "label": "Interpolation position sur polyline",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "8.2 Flux des donn\u00e9es",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_mobile_app",
+      "label": "Application mobile React Native + Expo",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "6. Application mobile",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_admin_nextjs",
+      "label": "Admin back-office Next.js",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.1 Vue syst\u00e8me",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_offline_first",
+      "label": "Strat\u00e9gie offline-first",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "6.3 Strat\u00e9gie offline-first",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_mobile_money",
+      "label": "Int\u00e9gration Mobile Money (Orange/MTN MoMo)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "10.1 Mobile Money",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_timing_provider",
+      "label": "Adapter prestataire chronom\u00e9trage (TimingProvider)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "10.2 Prestataire de chronom\u00e9trage",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_data_model",
+      "label": "Mod\u00e8le de donn\u00e9es (20 entit\u00e9s)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "9. Mod\u00e8le de donn\u00e9es",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_multi_tenancy",
+      "label": "Multi-tenancy par \u00e9dition (edition_id)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "9.2 D\u00e9cisions de design transversales",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_soft_delete",
+      "label": "Soft delete (anonymisation)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "9.2 D\u00e9cisions de design transversales",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_security",
+      "label": "S\u00e9curit\u00e9 et conformit\u00e9 (Loi 2010/012 + RGPD)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "11. S\u00e9curit\u00e9 et conformit\u00e9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_testing_strategy",
+      "label": "Strat\u00e9gie de tests (Vitest/Jest, Testcontainers, k6, Maestro)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "12. Strat\u00e9gie de tests",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_infra",
+      "label": "Infrastructure et d\u00e9ploiement (OVH + Supabase + Cloudflare)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "13. Infrastructure et d\u00e9ploiement",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_phase0",
+      "label": "Phase 0 \u2014 Fondations",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "14. Plan de livraison",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_phase1_pilote",
+      "label": "Phase 1 \u2014 Pilote MID 2026",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "14. Plan de livraison",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_spec_race_categories",
+      "label": "Cat\u00e9gories de course (42/21/10/kids)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7.2 Modules m\u00e9tier",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "design_spec_modular_monolith",
+      "target": "design_spec_api_nestjs",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.2",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_modular_monolith",
+      "target": "design_spec_tracking_service",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.2",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_solo_dev",
+      "target": "design_spec_modular_monolith",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.2 (simplicit\u00e9 op\u00e9rationnelle dev solo)",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_solo_dev",
+      "target": "design_spec_supabase_managed",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.3 (3-4 semaines \u00e9conomis\u00e9es)",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_supabase_managed",
+      "target": "design_spec_auth_flow",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "5.3 / 7.3",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_tracking_service",
+      "target": "design_spec_interpolation",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "8.2",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_mobile_app",
+      "target": "design_spec_offline_first",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "6.3",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_data_model",
+      "target": "design_spec_multi_tenancy",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "9.2",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_data_model",
+      "target": "design_spec_soft_delete",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "9.2",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_api_nestjs",
+      "target": "design_spec_mobile_money",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7.2 / 10.1 (module payments)",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_api_nestjs",
+      "target": "design_spec_timing_provider",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "7.2 / 10.2 (module results/tracking)",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_phase0",
+      "target": "design_spec_monorepo_org",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "14 Phase 0",
+      "weight": 1.0
+    },
+    {
+      "source": "design_spec_tara",
+      "target": "design_spec_mid_event",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md",
+      "source_location": "1-2",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "phase0_plans_implement_spec",
+      "label": "Phase 0 plans implementing the design spec",
+      "nodes": [
+        "plan1_doc",
+        "plan2_doc",
+        "design_spec_phase0",
+        "design_spec_monorepo_org",
+        "design_spec_api_nestjs"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-27-mid-mobile-app-design.md"
+    }
+  ]
+}

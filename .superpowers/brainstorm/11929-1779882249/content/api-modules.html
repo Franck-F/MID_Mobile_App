@@ -1,0 +1,81 @@
+<h2>Section 3 / 7 — API NestJS : modules métier</h2>
+<p class="subtitle">10 modules · découpage par domaine · OpenAPI auto-généré</p>
+
+<div class="section">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #0A3D62; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #0A3D62;">🔐 auth</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Validation JWT Supabase via JWKS · refresh tokens · guards (AuthGuard, RolesGuard) · décorateurs <code>@CurrentUser()</code>, <code>@Roles('admin')</code></div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #0A3D62; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #0A3D62;">👤 users</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Profils, préférences (langue, notifs, unités), rôles (runner, spectator, staff, admin), photo profil, contact urgence, allergies</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #F39C12; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #F39C12;">🏁 races</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Éditions, catégories (42km, 21km, 10km, kids), parcours GeoJSON, checkpoints, horaires, capacités, tarifs XAF</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #F39C12; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #F39C12;">📝 registrations</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Workflow inscription, certificat médical (upload + validation orga), attribution dossard, T-shirt, inscriptions groupes/équipes, promo codes</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #F39C12; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #F39C12;">💳 payments</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Orange Money + MTN MoMo (init paiement, webhooks signés, vérification, retry), idempotency keys, factures PDF, remboursements</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #16A085; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #16A085;">🏆 results</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Ingestion chrono (API ou CSV), splits par checkpoint, classements (catégorie/âge/sexe), recherche, génération certificats PDF, partage social</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #e74c3c; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #e74c3c;">📡 tracking</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Ingestion événements checkpoints (puces RFID), persistence positions historiques pour replay post-course, stats agrégées</div>
+      <div style="font-size: 10px; color: #999; margin-top: 4px;">⚠️ Le temps réel WebSocket est dans le <strong>service tracking séparé</strong>, pas ici</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #555; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #555;">📰 content</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">News, FAQ, sponsors, infos pratiques, mentions légales — multilingue (FR/EN), publication via admin</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #555; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #555;">📲 notifications</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Orchestration FCM (push) + Twilio/opérateur (SMS) + SendGrid (email) · templates · gestion préférences utilisateur · DLR tracking</div>
+    </div>
+
+    <div style="border: 1px solid #ddd; border-left: 4px solid #555; border-radius: 6px; padding: 14px; background: white;">
+      <div style="font-weight: bold; color: #555;">🛠️ admin</div>
+      <div style="font-size: 12px; color: #666; margin-top: 4px;">Endpoints back-office (statistiques, exports CSV, gestion staff TARA, validation manuelle certificats, override résultats)</div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <p class="label">Couches transverses</p>
+  <div style="background: #f8f9fb; border-radius: 8px; padding: 14px; font-size: 12px; color: #555; line-height: 1.7;">
+    <strong>Common</strong> : exception filters globaux · interceptors logging/metrics · pipes validation (class-validator + Zod) · response transformer<br>
+    <strong>Jobs</strong> : BullMQ sur Redis · cron sync chrono · génération PDF · envoi batch notifs · retry webhooks MoMo · cleanup inscriptions expirées<br>
+    <strong>Webhooks</strong> : endpoints publics signés pour MoMo Orange, MoMo MTN, prestataire chrono (handlers idempotents)<br>
+    <strong>Observability</strong> : Sentry (erreurs), Pino (logs JSON), Prometheus/Grafana (métriques), health checks <code>/healthz</code> <code>/readyz</code>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <p class="label">Auth flow</p>
+  <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; font-family: monospace; font-size: 12px; line-height: 1.8;">
+    <span style="color: #0A3D62;">1.</span> Mobile → Supabase Auth (signup/login email OTP ou téléphone +237 OTP)<br>
+    <span style="color: #0A3D62;">2.</span> Supabase → Mobile : JWT (accessToken + refreshToken)<br>
+    <span style="color: #0A3D62;">3.</span> Mobile → NestJS API : <code>Authorization: Bearer &lt;JWT&gt;</code><br>
+    <span style="color: #0A3D62;">4.</span> NestJS valide le JWT via JWKS Supabase (cache 1h), récupère <code>user_id</code><br>
+    <span style="color: #0A3D62;">5.</span> NestJS charge le profil local (table <code>users</code> synchronisée via webhook Supabase à l'inscription) + rôles<br>
+    <span style="color: #0A3D62;">6.</span> Guards (<code>AuthGuard</code>, <code>RolesGuard</code>) appliqués sur les controllers<br>
+    <span style="color: #0A3D62;">7.</span> Refresh : mobile gère via Supabase SDK, NestJS ne s'en occupe pas
+  </div>
+</div>

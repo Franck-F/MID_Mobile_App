@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "prettierrc_prettier_config",
+      "label": "Prettier Configuration",
+      "file_type": "code",
+      "source_file": ".prettierrc.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prettier_tool",
+      "label": "Prettier",
+      "file_type": "code",
+      "source_file": ".prettierrc.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "prettierrc_prettier_config",
+      "target": "prettier_tool",
+      "relation": "configures",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".prettierrc.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prettier_tool",
+      "target": "eslint_tool",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".prettierrc.json",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

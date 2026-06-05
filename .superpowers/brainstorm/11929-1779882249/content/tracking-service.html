@@ -1,0 +1,83 @@
+<h2>Section 4 / 7 — Service de tracking temps réel</h2>
+<p class="subtitle">Node + Socket.io · Redis adapter · interpolation checkpoints + GPS opt-in</p>
+
+<div class="section">
+  <div class="mockup">
+    <div class="mockup-header">Flux des données pendant la course</div>
+    <div class="mockup-body" style="padding: 24px; background: #f8f9fb;">
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+        <div style="background: white; border-radius: 10px; padding: 16px; border-top: 4px solid #F39C12;">
+          <div style="font-weight: bold; color: #F39C12; font-size: 13px;">SOURCE A · Puces RFID checkpoints</div>
+          <ol style="font-size: 12px; color: #555; padding-left: 18px; margin-top: 8px; line-height: 1.7;">
+            <li>Coureur traverse un checkpoint (5km, 10km, 15km, 21km, 30km, 42km)</li>
+            <li>Prestataire chrono envoie événement via webhook signé → <code>POST /tracking/checkpoint</code></li>
+            <li>Tracking service écrit en Redis (clé <code>runner:{id}:checkpoints</code>) + déclenche broadcast</li>
+            <li>Fallback : polling toutes les 30s si le webhook tombe</li>
+          </ol>
+          <div style="font-size: 11px; color: #999; margin-top: 8px;">✅ 100% des coureurs · obligatoire (résultats officiels)</div>
+        </div>
+
+        <div style="background: white; border-radius: 10px; padding: 16px; border-top: 4px solid #16A085;">
+          <div style="font-weight: bold; color: #16A085; font-size: 13px;">SOURCE B · GPS smartphone (opt-in)</div>
+          <ol style="font-size: 12px; color: #555; padding-left: 18px; margin-top: 8px; line-height: 1.7;">
+            <li>Coureur active le mode "Tracker live" dans l'app</li>
+            <li>App envoie position GPS toutes les 10s via WebSocket</li>
+            <li>Tracking service stocke en Redis (TTL 24h) + broadcast</li>
+            <li>Perte réseau → bufferisation locale SQLite → flush au retour</li>
+          </ol>
+          <div style="font-size: 11px; color: #999; margin-top: 8px;">~10-20% des coureurs estimés · expérience premium</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 24px 0 16px;">
+        <div style="font-size: 28px; color: #aaa;">⇣</div>
+      </div>
+
+      <div style="background: white; border-radius: 10px; padding: 20px; border: 2px solid #e74c3c;">
+        <div style="font-weight: bold; color: #e74c3c; text-align: center; font-size: 14px;">📡 TRACKING SERVICE (Node + Socket.io)</div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; font-size: 11px;">
+          <div style="background: #fef5f5; border-radius: 6px; padding: 10px;">
+            <strong style="color: #e74c3c;">Ingestion</strong>
+            <div style="color: #666; margin-top: 4px;">Reçoit webhooks chrono + WS GPS · valide · idempotent</div>
+          </div>
+          <div style="background: #fef5f5; border-radius: 6px; padding: 10px;">
+            <strong style="color: #e74c3c;">Interpolation</strong>
+            <div style="color: #666; margin-top: 4px;">Entre 2 checkpoints, estime position sur polyline parcours · allure constante</div>
+          </div>
+          <div style="background: #fef5f5; border-radius: 6px; padding: 10px;">
+            <strong style="color: #e74c3c;">Broadcast</strong>
+            <div style="color: #666; margin-top: 4px;">Diffuse aux spectateurs abonnés via Socket.io rooms (1 room par coureur)</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 16px 0;">
+        <div style="font-size: 28px; color: #aaa;">⇣</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="background: white; border-radius: 10px; padding: 16px; border-top: 4px solid #0A3D62;">
+          <div style="font-weight: bold; color: #0A3D62; font-size: 13px;">👀 Spectateur</div>
+          <div style="font-size: 12px; color: #555; margin-top: 6px; line-height: 1.6;">S'abonne à 1-5 coureurs favoris → rejoint leurs rooms WS → reçoit positions en push (toutes les 5s pour les coureurs sans GPS, en temps réel pour ceux avec GPS)</div>
+        </div>
+        <div style="background: white; border-radius: 10px; padding: 16px; border-top: 4px solid #0A3D62;">
+          <div style="font-weight: bold; color: #0A3D62; font-size: 13px;">💬 Cheer me</div>
+          <div style="font-size: 12px; color: #555; margin-top: 6px; line-height: 1.6;">Spectateur envoie message court → NestJS persiste + rate limit (max 10/coureur/spectateur) → Tracking service pousse au coureur via WS + notif push fallback</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <p class="label">Scalabilité race-day</p>
+  <div style="background: #fff7e6; border-left: 4px solid #F39C12; padding: 14px; border-radius: 4px; font-size: 13px; line-height: 1.7;">
+    <strong>Cible</strong> : 5000 coureurs + ~15000 spectateurs = ~20k connexions WS simultanées pendant 5h<br>
+    <strong>Stack</strong> : 3 instances tracking service derrière nginx, Socket.io Redis adapter pour broadcast cross-instance, sticky sessions au load balancer<br>
+    <strong>Pré-scale</strong> : 48h avant la course, on monte de 1 à 3 instances · downscale +24h après<br>
+    <strong>Capacité par instance</strong> : ~10k connexions Socket.io confortables sur un VPS OVH B2-15 (4 vCPU / 15 Go RAM, ~50€/mois)
+  </div>
+</div>

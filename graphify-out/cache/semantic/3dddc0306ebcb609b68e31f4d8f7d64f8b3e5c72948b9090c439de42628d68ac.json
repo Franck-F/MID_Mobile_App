@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "enums_supported_locales",
+      "label": "SUPPORTED_LOCALES (fr/en)",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/enums.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "enums_payment_providers",
+      "label": "PAYMENT_PROVIDERS (orange_momo/mtn_momo/card)",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/enums.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "enums_payment_providers",
+      "target": "design_spec_mobile_money",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "packages/shared-types/src/enums.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "enums_supported_locales",
+      "target": "design_spec_mobile_app",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "packages/shared-types/src/enums.ts",
+      "source_location": "i18n FR/EN",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,41 @@
+Scope: all 2 workspace projects
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 9, reused 6, downloaded 2, added 0
+Progress: resolved 11, reused 7, downloaded 3, added 0
+Progress: resolved 47, reused 41, downloaded 4, added 0
+Progress: resolved 84, reused 74, downloaded 4, added 0
+Progress: resolved 91, reused 79, downloaded 4, added 0
+Progress: resolved 124, reused 110, downloaded 5, added 0
+Progress: resolved 162, reused 145, downloaded 7, added 0
+Progress: resolved 204, reused 188, downloaded 7, added 0
+Progress: resolved 233, reused 220, downloaded 8, added 0
+Progress: resolved 236, reused 222, downloaded 8, added 0
+Progress: resolved 237, reused 222, downloaded 9, added 0
+Progress: resolved 241, reused 222, downloaded 10, added 0
+Progress: resolved 243, reused 225, downloaded 11, added 0
+Progress: resolved 245, reused 225, downloaded 12, added 0
+Progress: resolved 245, reused 225, downloaded 15, added 0
+Progress: resolved 248, reused 225, downloaded 15, added 0
+Progress: resolved 251, reused 228, downloaded 17, added 0
+Progress: resolved 252, reused 228, downloaded 17, added 0
+Packages: +235
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 252, reused 228, downloaded 19, added 23
+Progress: resolved 252, reused 228, downloaded 19, added 77
+Progress: resolved 252, reused 228, downloaded 19, added 106
+Progress: resolved 252, reused 228, downloaded 19, added 126
+Progress: resolved 252, reused 228, downloaded 19, added 158
+Progress: resolved 252, reused 228, downloaded 19, added 185
+Progress: resolved 252, reused 228, downloaded 19, added 216
+Progress: resolved 252, reused 228, downloaded 19, added 231
+Progress: resolved 252, reused 228, downloaded 19, added 232
+Progress: resolved 252, reused 228, downloaded 19, added 234
+Progress: resolved 252, reused 228, downloaded 19, added 235
+Progress: resolved 252, reused 228, downloaded 19, added 235, done
+
+devDependencies:
++ rimraf 6.1.3
++ turbo 2.9.15
++ typescript 5.9.3 (6.0.3 is available)
+
+Done in 48.3s

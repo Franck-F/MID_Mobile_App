@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "pre_commit_hook",
+      "label": "pre-commit Git Hook",
+      "file_type": "code",
+      "source_file": ".husky/_/pre-commit",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lint_staged_tool",
+      "label": "lint-staged",
+      "file_type": "code",
+      "source_file": ".husky/_/pre-commit",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "pre_commit_hook",
+      "target": "h_husky_hook_dispatcher",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/_/pre-commit",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

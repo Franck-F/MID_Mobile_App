@@ -1,0 +1,95 @@
+<h2>Section 1 / 7 — Architecture haut niveau</h2>
+<p class="subtitle">Monorepo unique, 3 applis, 2 services backend, OVH France</p>
+
+<div class="section">
+  <div class="mockup">
+    <div class="mockup-header">Vue système</div>
+    <div class="mockup-body" style="padding: 32px; background: #f8f9fb;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+
+        <div style="background: white; border: 2px solid #0A3D62; border-radius: 12px; padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 8px;">📱</div>
+          <div style="font-weight: bold; color: #0A3D62;">Mobile App</div>
+          <div style="font-size: 12px; color: #666; margin-top: 4px;">React Native + Expo</div>
+          <div style="font-size: 11px; color: #999; margin-top: 8px;">iOS + Android<br>Coureurs, spectateurs, staff</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #16A085; border-radius: 12px; padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 8px;">💻</div>
+          <div style="font-weight: bold; color: #16A085;">Admin Web</div>
+          <div style="font-size: 12px; color: #666; margin-top: 4px;">Next.js 15 (App Router)</div>
+          <div style="font-size: 11px; color: #999; margin-top: 8px;">TARA, FECA<br>back-office</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #999; border-radius: 12px; padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 8px;">🌐</div>
+          <div style="font-weight: bold; color: #555;">Site public</div>
+          <div style="font-size: 12px; color: #666; margin-top: 4px;">mid-cm.com existant</div>
+          <div style="font-size: 11px; color: #999; margin-top: 8px;">Liens vers app stores<br>(intégration light)</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 16px 0;">
+        <div style="font-size: 28px; color: #aaa;">⇣ HTTPS / WSS ⇣</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 32px;">
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 12px; padding: 20px;">
+          <div style="font-weight: bold; color: #F39C12; margin-bottom: 8px;">⚙️ API NestJS (monolithe modulaire)</div>
+          <div style="font-size: 12px; color: #666; line-height: 1.6;">
+            Modules : <code>auth</code> · <code>users</code> · <code>races</code> · <code>registrations</code> · <code>payments</code> · <code>results</code> · <code>content</code> · <code>notifications</code> · <code>admin</code>
+          </div>
+          <div style="font-size: 11px; color: #999; margin-top: 10px;">REST + OpenAPI · BullMQ queues · webhook handlers</div>
+        </div>
+        <div style="background: white; border: 2px solid #e74c3c; border-radius: 12px; padding: 20px;">
+          <div style="font-weight: bold; color: #e74c3c; margin-bottom: 8px;">📡 Tracking Service</div>
+          <div style="font-size: 12px; color: #666; line-height: 1.6;">
+            WebSocket gateway (Socket.io) · interpolation checkpoints · diffusion positions · cheer feed
+          </div>
+          <div style="font-size: 11px; color: #999; margin-top: 10px;">Node.js dédié · scalable horizontalement</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 16px 0;">
+        <div style="font-size: 28px; color: #aaa;">⇣</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+        <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 14px; text-align: center;">
+          <div style="font-weight: bold; color: #336791;">🐘 PostgreSQL</div>
+          <div style="font-size: 11px; color: #999; margin-top: 4px;">Données transactionnelles : inscriptions, paiements, résultats, contenu</div>
+        </div>
+        <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 14px; text-align: center;">
+          <div style="font-weight: bold; color: #d82c20;">⚡ Redis</div>
+          <div style="font-size: 11px; color: #999; margin-top: 4px;">Cache · pub/sub tracking · sessions · queues BullMQ</div>
+        </div>
+        <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 14px; text-align: center;">
+          <div style="font-weight: bold; color: #569A31;">🗄️ S3 (OVH Object Storage)</div>
+          <div style="font-size: 11px; color: #999; margin-top: 4px;">Certificats médicaux, photos, PDF certificats finisher</div>
+        </div>
+        <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 14px; text-align: center;">
+          <div style="font-weight: bold; color: #777;">📊 Observabilité</div>
+          <div style="font-size: 11px; color: #999; margin-top: 4px;">Sentry · Grafana · logs centralisés</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="label">Intégrations externes</p>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px;">
+    <div style="background: #fff7e6; border-left: 4px solid #F39C12; padding: 12px; border-radius: 4px;">
+      <div style="font-weight: bold; font-size: 13px;">💳 Paiement</div>
+      <div style="font-size: 11px; color: #666;">Orange Money + MTN MoMo (API marchand)</div>
+    </div>
+    <div style="background: #e8f6f0; border-left: 4px solid #16A085; padding: 12px; border-radius: 4px;">
+      <div style="font-weight: bold; font-size: 13px;">⏱️ Chronométrage</div>
+      <div style="font-size: 11px; color: #666;">API du prestataire (à confirmer avec TARA)</div>
+    </div>
+    <div style="background: #e8f0fb; border-left: 4px solid #0A3D62; padding: 12px; border-radius: 4px;">
+      <div style="font-weight: bold; font-size: 13px;">📲 Notifications</div>
+      <div style="font-size: 11px; color: #666;">FCM (push) · Twilio ou opérateur local (SMS) · SendGrid (email)</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "nodes": [],
+  "edges": [
+    {
+      "source": "pre_commit_hook",
+      "target": "lint_staged_tool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/pre-commit",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lint_staged_tool",
+      "target": "prettier_tool",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": ".husky/pre-commit",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lint_staged_tool",
+      "target": "eslint_tool",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": ".husky/pre-commit",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "git_commit_quality_gate",
+      "label": "Pre-commit Code Quality Gate",
+      "nodes": ["pre_commit_hook", "lint_staged_tool", "prettier_tool", "eslint_tool"],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".husky/pre-commit"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "main_bootstrap",
+      "label": "bootstrap (NestJS app entrypoint)",
+      "file_type": "code",
+      "source_file": "apps/api/src/main.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "main_bootstrap",
+      "target": "app_module_app_module",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/main.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "main_bootstrap",
+      "target": "logger_module_logger_module",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "apps/api/src/main.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "nest_bootstrap_flow",
+      "label": "NestJS bootstrap flow (main creates AppModule, uses Pino Logger, sets api prefix, listens)",
+      "nodes": ["main_bootstrap", "app_module_app_module", "logger_module_logger_module"],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "apps/api/src/main.ts"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\husky.sh": {
+    "size": 160,
+    "mtime_ns": 1779890483813015400,
+    "hash": "6db0aa99aece6ebd17bbc27c5e5287a462fb39cc4a2ca3a82a6277c166bdb3a0"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.prettierrc.json": {
+    "size": 228,
+    "mtime_ns": 1779885980244659400,
+    "hash": "93086d5400069efc31cf99534c19a3300e65bbf61bdc64e772c5b7e833b3ac0f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\nest-cli.json": {
+    "size": 215,
+    "mtime_ns": 1779890272843955400,
+    "hash": "07feb54f5e51d71e2be4f310345767f8f7d29a15ba4a99bc76768b3f6b37fb3a"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\package.json": {
+    "size": 1915,
+    "mtime_ns": 1779890255509931700,
+    "hash": "4563159b3593ca21cd219eb899b8d3345e8a1810fd23d5d65e444d3157ffdc7e"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\tsconfig.eslint.json": {
+    "size": 505,
+    "mtime_ns": 1779890519597557800,
+    "hash": "ada84d2b4bd13ce942cbd4d092c9c263740d34c38ad8a56198e3f9eb2b8fbdbf"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\tsconfig.json": {
+    "size": 750,
+    "mtime_ns": 1779891757061163100,
+    "hash": "c556e2a68678afeb8f032ddec4ded378c2caa16df71f8f688510762f2e409b6d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\package.json": {
+    "size": 1490,
+    "mtime_ns": 1779887093165199600,
+    "hash": "bde1364d9999d6bb4ee45729a5dda2c884fc49adb4583b119b54d6ab860ad8e4"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\package.json": {
+    "size": 523,
+    "mtime_ns": 1779885806298289700,
+    "hash": "7fb2a7595a7e7434a8c290b9e2aac33d70a5be1527722e20fd0b024aceca5b22"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\package.json": {
+    "size": 552,
+    "mtime_ns": 1779886585282690200,
+    "hash": "dbb9ed43eee2d12abd2aa0e7c070adb17941725cc9fba65f59229ad01e1076b6"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\tsconfig.eslint.json": {
+    "size": 200,
+    "mtime_ns": 1779886695861441900,
+    "hash": "12788c622105b5958fff9b60cf4abbeed2f0b9c5582d0c4f3d758c81765d0f85"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\tsconfig.json": {
+    "size": 224,
+    "mtime_ns": 1779886430428771200,
+    "hash": "c54f11b306868c9bbc1cc90cc18614a95c303848f65fe5d41214cd792c996ff9"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\tsconfig.base.json": {
+    "size": 924,
+    "mtime_ns": 1779885685841513600,
+    "hash": "ebb18b46c94a7c9d8098fe8e6168256cf25f78652161c0e8c241a7a321ddef0f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\turbo.json": {
+    "size": 697,
+    "mtime_ns": 1779885591429439100,
+    "hash": "a49fbfa3a660cd420bbf9c48a3eff736feb043756d31c0ef89a33400f44e91e0"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\applypatch-msg": {
+    "size": 39,
+    "mtime_ns": 1779890483806111200,
+    "hash": "6a9064e8fb13487a3a621e0dbb7bd8c82245b9c904b0c2dbcf3ce5fe55506b9c"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\commit-msg": {
+    "size": 39,
+    "mtime_ns": 1779890483804051900,
+    "hash": "0bff8d003cbfd9b75abbe94b6017890688fb016d9cd9e4474bba08706c61d3d0"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\h": {
+    "size": 551,
+    "mtime_ns": 1779886208302009100,
+    "hash": "f99a890a7c2de1e26a154549cb667ee9a884327e25ddbd6380ab23a986570ffc"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-applypatch": {
+    "size": 39,
+    "mtime_ns": 1779890483806111200,
+    "hash": "678bc23efa73439ac107fddd35e640e583d68b45ab0c119be3ba50a81553e99d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-checkout": {
+    "size": 39,
+    "mtime_ns": 1779890483810659400,
+    "hash": "f5104aea4b990fe94fe2eacb0323c2128b3f66f11d3fc388538530dada2db808"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-commit": {
+    "size": 39,
+    "mtime_ns": 1779890483806111200,
+    "hash": "20dc01bba5753874a3746d18250b5b5d71aebbfbdfda5305a6dfc2541adb209b"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-merge": {
+    "size": 39,
+    "mtime_ns": 1779890483810659400,
+    "hash": "9dd56caa8fa28b5494661ce7c97d756013f200ac4e60f619671f4d4eca46faa6"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-rewrite": {
+    "size": 39,
+    "mtime_ns": 1779890483809139400,
+    "hash": "3aa066773301fd07106a7926663f6ca3931ebf19bcacce7e156ead4e8446121a"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-applypatch": {
+    "size": 39,
+    "mtime_ns": 1779890483806111200,
+    "hash": "24332da3a5839bca3276206674c0c6119f653c3dd2b01e2f5b37194a02d185f8"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-auto-gc": {
+    "size": 39,
+    "mtime_ns": 1779890483810659400,
+    "hash": "d0038c1f6c4208a560ea4669eefc633b8460563cc29fcbc3c0d6c44309916f62"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-commit": {
+    "size": 39,
+    "mtime_ns": 1779890483800336800,
+    "hash": "d0b0ee2878cb9efe03dfbf9327e5038d7a10eabd56ad9b1321c45eff1447e98d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-merge-commit": {
+    "size": 39,
+    "mtime_ns": 1779890483804051900,
+    "hash": "20798fb4a9d9b6f3593cdd371ca98fa15a5d57c1bf9bfc489039b5595b7028ff"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-push": {
+    "size": 39,
+    "mtime_ns": 1779890483810659400,
+    "hash": "dd427fbe45aac0d22b4b75cd3738b4f19bb6b9203413d57e83eb402c992e636d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-rebase": {
+    "size": 39,
+    "mtime_ns": 1779890483809139400,
+    "hash": "c94f2d13aabe67bf5766093bbd03c9b9e5580deadc230f73ad6421b3ec0bf290"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\prepare-commit-msg": {
+    "size": 39,
+    "mtime_ns": 1779890483804051900,
+    "hash": "d571f11fd4274692937568cb770a19c830c585c6cef79f550d5c27340871a18f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\eslint.config.mjs": {
+    "size": 581,
+    "mtime_ns": 1779890837279394600,
+    "hash": "5632897673134aa8aca1b5a419e9ef1485a60fb17f72ea62b2e44d18bbf1c564"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\app.module.ts": {
+    "size": 303,
+    "mtime_ns": 1779894389584185600,
+    "hash": "59ea27ccf575d0c5bb4a7461ed358bf119e1cc19f68087ccb037323b2176cc44"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\config.module.ts": {
+    "size": 327,
+    "mtime_ns": 1779891209274306700,
+    "hash": "e59b879d4d6d224fcadb17c8e4eadf1d744152615c6c6afadc13d7a534447c70"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\env.schema.ts": {
+    "size": 716,
+    "mtime_ns": 1779891201472765900,
+    "hash": "a15955494683864525433a340ee9235a3657b58ff34ca6127f97caa10576833d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\env.validation.ts": {
+    "size": 456,
+    "mtime_ns": 1779892260607330000,
+    "hash": "44aa5dc7b4f9978079eb5f3b8fb026eb8351ea7fe79660e4fffec1c572e07b55"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.controller.spec.ts": {
+    "size": 956,
+    "mtime_ns": 1779894342026673400,
+    "hash": "e375d295bf1a7e48744508af83816e514548495de6350daa5de68eb3699e2cf1"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.controller.ts": {
+    "size": 901,
+    "mtime_ns": 1779894731703440500,
+    "hash": "a29d1d8fef3f308e42e6fec881ab781b734bce035906a8994d43ef363b51d62d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.module.ts": {
+    "size": 176,
+    "mtime_ns": 1779894381942402600,
+    "hash": "095ef097a7783ca5f8526713e98671606df6c03f9961aff21d32ccdfc71c9bb1"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\logging\\logger.module.ts": {
+    "size": 478,
+    "mtime_ns": 1779892568983738400,
+    "hash": "7afd98878c64691167fd54e02aaae131e76200afdb75d322083ea2937c0a814f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\logging\\pino.config.ts": {
+    "size": 1129,
+    "mtime_ns": 1779892610455167000,
+    "hash": "6668c4f657a46b115361a58d35ab5805b2b3087fafde728b852c912ea03e0381"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\main.ts": {
+    "size": 488,
+    "mtime_ns": 1779892479911108700,
+    "hash": "bddaa5b3eb0025042cac919defddfc216ba2d6533871759752d07d5b53bdbac6"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\vitest.config.ts": {
+    "size": 400,
+    "mtime_ns": 1779890269868825200,
+    "hash": "360d5dfb79c639b397328d5af68ecfd407acf34581aaa1ad9a238481f32ae3f4"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\commitlint.config.mjs": {
+    "size": 361,
+    "mtime_ns": 1779886257301343400,
+    "hash": "996f616f62fc31f103840229650206faa23f2a0169bc8db2274184e686e4d6d5"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\index.mjs": {
+    "size": 1119,
+    "mtime_ns": 1779885813623909500,
+    "hash": "bc50e37ae01a4756dab7f9490e309f1a75eef0be6825055d58057ccb46bfd596"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\node.mjs": {
+    "size": 171,
+    "mtime_ns": 1779885819354453500,
+    "hash": "0407222655f4a20cd6a9ca0d1dc5727bb05f60a623912bbb73db866c47a80fa8"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\react.mjs": {
+    "size": 629,
+    "mtime_ns": 1779885826814995200,
+    "hash": "8ab6ec25e2cdd1a4a84a6522fab24dafd07987c01c08e8757529fd643a01dd6f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\eslint.config.mjs": {
+    "size": 388,
+    "mtime_ns": 1779886712672034300,
+    "hash": "c791c0137623ab09b8e47cc9d40542f20ab81344a53d7ae93adb5b82dab94f23"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\enums.ts": {
+    "size": 268,
+    "mtime_ns": 1779886770655703800,
+    "hash": "3dddc0306ebcb609b68e31f4d8f7d64f8b3e5c72948b9090c439de42628d68ac"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\index.ts": {
+    "size": 66,
+    "mtime_ns": 1779886770684990500,
+    "hash": "a8864b5dd2c52fbec6262b1522748de5c4841436ad5c1e64c152df217ae1b360"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\schemas\\race-category.test.ts": {
+    "size": 707,
+    "mtime_ns": 1779886770737982300,
+    "hash": "473daf0defecf48a945a8202eeeb0b4ca543794c16d5073b271bb78a565fe166"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\schemas\\race-category.ts": {
+    "size": 185,
+    "mtime_ns": 1779886770764005600,
+    "hash": "b61a65e9c692da81fb8a133b32454c7efe7d995d90db9292b0205a9d7c6b5150"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\vitest.config.ts": {
+    "size": 208,
+    "mtime_ns": 1779886770790783400,
+    "hash": "2f7f343807acc139c39fdba7f7b69ae566854ed99346da496ac7618e7ee0c191"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.github\\dependabot.yml": {
+    "size": 562,
+    "mtime_ns": 1779887812453664300,
+    "hash": "c164cfcf77dd2e5a6c096e3f358599f66052e095fd25ff0c6a39a6e2079c6683"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.github\\workflows\\ci.yml": {
+    "size": 1987,
+    "mtime_ns": 1779887189933358100,
+    "hash": "282901b5842651173e670feeacd2ad6b2c3051ffd56e05536f4fc9007b51700c"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\README.md": {
+    "size": 2695,
+    "mtime_ns": 1779887909604485600,
+    "hash": "c65cafc6d1066ca7b73b1fb2a6074fc9ee5a0546e65d786c5a2a3d3494b1089c"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\plans\\2026-05-27-phase0-plan1-monorepo-foundation.md": {
+    "size": 34639,
+    "mtime_ns": 1779884747691281000,
+    "hash": "52a98655267ac901473296b56fc2535dc9fbfa76126dc8e21dd56be8e272dbb9"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\plans\\2026-05-27-phase0-plan2-api-nestjs.md": {
+    "size": 81609,
+    "mtime_ns": 1779889160234990500,
+    "hash": "4e37db2f14e4ae2382c8b9868432b49ca8123cce5570aae0a65bb39366c70228"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\specs\\2026-05-27-mid-mobile-app-design.md": {
+    "size": 31948,
+    "mtime_ns": 1779884200911349300,
+    "hash": "25a1fb7e3c0d6d63587c5c9a73a8aade6aa96e450096a3c81469c08301b9f369"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\infrastructure\\docker\\docker-compose.dev.yml": {
+    "size": 852,
+    "mtime_ns": 1779887102423909100,
+    "hash": "31580a22df390b963a7d9db83757d84ae27dff8dfa7259c30d0d4037c7bf08eb"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\README.md": {
+    "size": 322,
+    "mtime_ns": 1779885833022767000,
+    "hash": "3356104083763eb30d09e04809363f015c2434c63700b85b65ceea50876b2808"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\pnpm-workspace.yaml": {
+    "size": 40,
+    "mtime_ns": 1779886101681891600,
+    "hash": "4b77dad994e5bd6356134b2802fc1055df8061b1fda52141e8b4f94a8658c52f"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\pre-commit": {
+    "size": 17,
+    "mtime_ns": 1779886243202643900,
+    "hash": "be6b8c220e70eab87703f4b4e7c103e0752957cd77c08ab06d0de921da946cdc"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\commit-msg": {
+    "size": 28,
+    "mtime_ns": 1779886250580119200,
+    "hash": "5a30ff4f0a5ec70ceeff304fcdc17f30412e5c1f358634111a9c856dd5f32ac7"
+  }
+}

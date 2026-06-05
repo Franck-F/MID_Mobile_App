@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "react_mjs_eslint_react_config",
+      "label": "@mid/eslint-config/react",
+      "file_type": "code",
+      "source_file": "packages/eslint-config/react.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "react_mjs_eslint_react_config",
+      "target": "index_mjs_eslint_base_config",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/eslint-config/react.mjs",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

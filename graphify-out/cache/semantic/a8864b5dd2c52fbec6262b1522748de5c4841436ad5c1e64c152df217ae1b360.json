@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "index_shared_types_barrel",
+      "label": "shared-types index barrel",
+      "file_type": "code",
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "index_shared_types_barrel",
+      "target": "racecategory_schema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_shared_types_barrel",
+      "target": "enums_supported_locales",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_shared_types_barrel",
+      "target": "enums_payment_providers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/shared-types/src/index.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

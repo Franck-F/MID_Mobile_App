@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "app_module_app_module",
+      "label": "AppModule (root NestJS module)",
+      "file_type": "code",
+      "source_file": "apps/api/src/app.module.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "app_module_app_module",
+      "target": "config_module_config_module",
+      "relation": "imports_module",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/app.module.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "app_module_app_module",
+      "target": "logger_module_logger_module",
+      "relation": "imports_module",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/app.module.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "app_module_app_module",
+      "target": "health_module_health_module",
+      "relation": "imports_module",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/app.module.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "app_module_composition",
+      "label": "AppModule composes ConfigModule, LoggerModule, HealthModule",
+      "nodes": [
+        "app_module_app_module",
+        "config_module_config_module",
+        "logger_module_logger_module",
+        "health_module_health_module"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/app.module.ts"
+    }
+  ]
+}

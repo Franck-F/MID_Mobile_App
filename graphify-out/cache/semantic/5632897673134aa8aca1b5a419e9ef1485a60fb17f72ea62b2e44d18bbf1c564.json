@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "eslint_config_api_eslint_config",
+      "label": "API ESLint Flat Config",
+      "file_type": "code",
+      "source_file": "apps/api/eslint.config.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "eslint_tool",
+      "label": "ESLint",
+      "file_type": "code",
+      "source_file": "apps/api/eslint.config.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "eslint_config_mid_shared_eslint_config",
+      "label": "@mid/eslint-config (shared node config)",
+      "file_type": "code",
+      "source_file": "apps/api/eslint.config.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "eslint_config_api_eslint_config",
+      "target": "eslint_tool",
+      "relation": "configures",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/eslint.config.mjs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_api_eslint_config",
+      "target": "eslint_config_mid_shared_eslint_config",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/eslint.config.mjs",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

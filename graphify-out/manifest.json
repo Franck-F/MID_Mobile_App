@@ -1,0 +1,297 @@
+{
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\applypatch-msg": {
+    "mtime": 1779890483.806111,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\commit-msg": {
+    "mtime": 1779890483.8040519,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\h": {
+    "mtime": 1779886208.302009,
+    "ast_hash": "15239a01c5554e56ff745570fb583a91",
+    "semantic_hash": "15239a01c5554e56ff745570fb583a91"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\husky.sh": {
+    "mtime": 1779890483.8130155,
+    "ast_hash": "13871d2ab13e8423790ecb2c01c78c18",
+    "semantic_hash": "13871d2ab13e8423790ecb2c01c78c18"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-applypatch": {
+    "mtime": 1779890483.806111,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-checkout": {
+    "mtime": 1779890483.8106594,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-commit": {
+    "mtime": 1779890483.806111,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-merge": {
+    "mtime": 1779890483.8106594,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\post-rewrite": {
+    "mtime": 1779890483.8091395,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-applypatch": {
+    "mtime": 1779890483.806111,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-auto-gc": {
+    "mtime": 1779890483.8106594,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-commit": {
+    "mtime": 1779890483.8003368,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-merge-commit": {
+    "mtime": 1779890483.8040519,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-push": {
+    "mtime": 1779890483.8106594,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\pre-rebase": {
+    "mtime": 1779890483.8091395,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.husky\\_\\prepare-commit-msg": {
+    "mtime": 1779890483.8040519,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.prettierrc.json": {
+    "mtime": 1779885980.2446594,
+    "ast_hash": "b27e4742da7da1ea9dd808380d270faa",
+    "semantic_hash": "b27e4742da7da1ea9dd808380d270faa"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\eslint.config.mjs": {
+    "mtime": 1779890837.2793946,
+    "ast_hash": "cb958c1735e96afb94699e6dd26c6dad",
+    "semantic_hash": "cb958c1735e96afb94699e6dd26c6dad"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\nest-cli.json": {
+    "mtime": 1779890272.8439555,
+    "ast_hash": "e28ebfa9e660cc2e531d474ccdf9b2b4",
+    "semantic_hash": "e28ebfa9e660cc2e531d474ccdf9b2b4"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\package.json": {
+    "mtime": 1779890255.5099318,
+    "ast_hash": "c0ed9ad3f25d47ec0edd536b4597d2a5",
+    "semantic_hash": "c0ed9ad3f25d47ec0edd536b4597d2a5"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\app.module.ts": {
+    "mtime": 1779894389.5841856,
+    "ast_hash": "cb1a83a30732c27a9c36dff3b0764c31",
+    "semantic_hash": "cb1a83a30732c27a9c36dff3b0764c31"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\config.module.ts": {
+    "mtime": 1779891209.2743068,
+    "ast_hash": "de90b0b3dbe25bc858c6cbeecf8e97f7",
+    "semantic_hash": "de90b0b3dbe25bc858c6cbeecf8e97f7"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\env.schema.ts": {
+    "mtime": 1779891201.472766,
+    "ast_hash": "a73da364a8bdd3ce65dac3667a8dad3b",
+    "semantic_hash": "a73da364a8bdd3ce65dac3667a8dad3b"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\config\\env.validation.ts": {
+    "mtime": 1779892260.60733,
+    "ast_hash": "23dc456fb76ca75c1342867f219547b6",
+    "semantic_hash": "23dc456fb76ca75c1342867f219547b6"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.controller.spec.ts": {
+    "mtime": 1779894342.0266733,
+    "ast_hash": "1d00af2a404318ecafc10398c10dbfb2",
+    "semantic_hash": "1d00af2a404318ecafc10398c10dbfb2"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.controller.ts": {
+    "mtime": 1779894731.7034404,
+    "ast_hash": "0c05b1207f12f8c463b56c1d9c88c1ad",
+    "semantic_hash": "0c05b1207f12f8c463b56c1d9c88c1ad"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\health\\health.module.ts": {
+    "mtime": 1779894381.9424026,
+    "ast_hash": "764a15d5b1c8706fececca7a7437b820",
+    "semantic_hash": "764a15d5b1c8706fececca7a7437b820"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\logging\\logger.module.ts": {
+    "mtime": 1779892568.9837384,
+    "ast_hash": "785735a6d7eca1969cb711cf4ca4afcf",
+    "semantic_hash": "785735a6d7eca1969cb711cf4ca4afcf"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\logging\\pino.config.ts": {
+    "mtime": 1779892610.455167,
+    "ast_hash": "daed67ca275beba5cfa1d892baef2e72",
+    "semantic_hash": "daed67ca275beba5cfa1d892baef2e72"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\src\\main.ts": {
+    "mtime": 1779892479.9111087,
+    "ast_hash": "1cc32c196e24b1e0ac7e364acfe52765",
+    "semantic_hash": "1cc32c196e24b1e0ac7e364acfe52765"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\tsconfig.eslint.json": {
+    "mtime": 1779890519.5975578,
+    "ast_hash": "8ed54ae0a1e8824613eda748ee3264a4",
+    "semantic_hash": "8ed54ae0a1e8824613eda748ee3264a4"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\tsconfig.json": {
+    "mtime": 1779891757.0611632,
+    "ast_hash": "72c773dde1df251ba6b9239ed3ecbcfc",
+    "semantic_hash": "72c773dde1df251ba6b9239ed3ecbcfc"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\apps\\api\\vitest.config.ts": {
+    "mtime": 1779890269.8688252,
+    "ast_hash": "0bb2938e41934d206e6399f9823afdf3",
+    "semantic_hash": "0bb2938e41934d206e6399f9823afdf3"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\commitlint.config.mjs": {
+    "mtime": 1779886257.3013434,
+    "ast_hash": "a639ba7569907944b557022307648030",
+    "semantic_hash": "a639ba7569907944b557022307648030"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\package.json": {
+    "mtime": 1779887093.1651995,
+    "ast_hash": "51e396f4a8f50386462f5ad5b790bdd2",
+    "semantic_hash": "51e396f4a8f50386462f5ad5b790bdd2"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\index.mjs": {
+    "mtime": 1779885813.6239095,
+    "ast_hash": "e1f6377d2d9bf9809f342bc0a68773d6",
+    "semantic_hash": "e1f6377d2d9bf9809f342bc0a68773d6"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\node.mjs": {
+    "mtime": 1779885819.3544536,
+    "ast_hash": "e205449637b5100b0c4530646759e126",
+    "semantic_hash": "e205449637b5100b0c4530646759e126"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\package.json": {
+    "mtime": 1779885806.2982898,
+    "ast_hash": "06877f2046da0e0c7041cf39d177939e",
+    "semantic_hash": "06877f2046da0e0c7041cf39d177939e"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\react.mjs": {
+    "mtime": 1779885826.8149953,
+    "ast_hash": "896defb13dc45200225c44fe815a607d",
+    "semantic_hash": "896defb13dc45200225c44fe815a607d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\eslint.config.mjs": {
+    "mtime": 1779886712.6720343,
+    "ast_hash": "1c181cc8efe20543294e73a3fc5675e8",
+    "semantic_hash": "1c181cc8efe20543294e73a3fc5675e8"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\package.json": {
+    "mtime": 1779886585.2826903,
+    "ast_hash": "0cdd62979c45b712e2eb9fc63ddddfad",
+    "semantic_hash": "0cdd62979c45b712e2eb9fc63ddddfad"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\enums.ts": {
+    "mtime": 1779886770.6557038,
+    "ast_hash": "98e91c6f406d0905c9bf884a0ac7dee9",
+    "semantic_hash": "98e91c6f406d0905c9bf884a0ac7dee9"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\index.ts": {
+    "mtime": 1779886770.6849904,
+    "ast_hash": "59d01fc5a1d8045c369979fa7ae9160e",
+    "semantic_hash": "59d01fc5a1d8045c369979fa7ae9160e"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\schemas\\race-category.test.ts": {
+    "mtime": 1779886770.7379823,
+    "ast_hash": "437f531b931c45932df4fcf98ccddc52",
+    "semantic_hash": "437f531b931c45932df4fcf98ccddc52"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\src\\schemas\\race-category.ts": {
+    "mtime": 1779886770.7640057,
+    "ast_hash": "6f36b364f0ab068b43f60895d9bfb7d1",
+    "semantic_hash": "6f36b364f0ab068b43f60895d9bfb7d1"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\tsconfig.eslint.json": {
+    "mtime": 1779886695.8614419,
+    "ast_hash": "7795dba1411e1cd667a3e3ddc56e23cf",
+    "semantic_hash": "7795dba1411e1cd667a3e3ddc56e23cf"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\tsconfig.json": {
+    "mtime": 1779886430.4287713,
+    "ast_hash": "8f73b2abf38250b464b4bf7fa174dc6d",
+    "semantic_hash": "8f73b2abf38250b464b4bf7fa174dc6d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\shared-types\\vitest.config.ts": {
+    "mtime": 1779886770.7907834,
+    "ast_hash": "1de0763ad7244eb4acf1445fc460f413",
+    "semantic_hash": "1de0763ad7244eb4acf1445fc460f413"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\tsconfig.base.json": {
+    "mtime": 1779885685.8415136,
+    "ast_hash": "ace1e1c7e002c6512fedd1dffe2e23e7",
+    "semantic_hash": "ace1e1c7e002c6512fedd1dffe2e23e7"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\turbo.json": {
+    "mtime": 1779885591.429439,
+    "ast_hash": "d08fadbb25ff3dff3d56bcb06698c7c5",
+    "semantic_hash": "d08fadbb25ff3dff3d56bcb06698c7c5"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.github\\dependabot.yml": {
+    "mtime": 1779887812.4536643,
+    "ast_hash": "49a236116f095849a0c6bcdba66f12d1",
+    "semantic_hash": "49a236116f095849a0c6bcdba66f12d1"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\.github\\workflows\\ci.yml": {
+    "mtime": 1779887189.9333582,
+    "ast_hash": "913de00df53b35783aba228d47447181",
+    "semantic_hash": "913de00df53b35783aba228d47447181"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\README.md": {
+    "mtime": 1779887909.6044855,
+    "ast_hash": "f289e70c1ae739d16e7a529f4a6775be",
+    "semantic_hash": "f289e70c1ae739d16e7a529f4a6775be"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\plans\\2026-05-27-phase0-plan1-monorepo-foundation.md": {
+    "mtime": 1779884747.691281,
+    "ast_hash": "b64408b2f25848d1d7efc50b1797524d",
+    "semantic_hash": "b64408b2f25848d1d7efc50b1797524d"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\plans\\2026-05-27-phase0-plan2-api-nestjs.md": {
+    "mtime": 1779889160.2349906,
+    "ast_hash": "e7305a3ec376163f0f4b1d52a1089c09",
+    "semantic_hash": "e7305a3ec376163f0f4b1d52a1089c09"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\docs\\superpowers\\specs\\2026-05-27-mid-mobile-app-design.md": {
+    "mtime": 1779884200.9113493,
+    "ast_hash": "0176c07b3271fe751d7ebf402e982075",
+    "semantic_hash": "0176c07b3271fe751d7ebf402e982075"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\infrastructure\\docker\\docker-compose.dev.yml": {
+    "mtime": 1779887102.4239092,
+    "ast_hash": "aea9dd7797fca09545d2780217c69a12",
+    "semantic_hash": "aea9dd7797fca09545d2780217c69a12"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\packages\\eslint-config\\README.md": {
+    "mtime": 1779885833.022767,
+    "ast_hash": "34b395db0e411f68f291e1e041a8def7",
+    "semantic_hash": "34b395db0e411f68f291e1e041a8def7"
+  },
+  "C:\\Users\\Franck\\Documents\\App-Mobile-MID\\pnpm-workspace.yaml": {
+    "mtime": 1779886101.6818917,
+    "ast_hash": "f5f68f0530f1523041e8467c1c46178d",
+    "semantic_hash": "f5f68f0530f1523041e8467c1c46178d"
+  }
+}

@@ -1,0 +1,71 @@
+<h2>Section 6 / 7 — Intégrations externes</h2>
+<p class="subtitle">9 intégrations à orchestrer · les 2 plus risquées : Mobile Money et chronométrage</p>
+
+<div class="section">
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
+
+    <div style="border: 2px solid #F39C12; border-radius: 10px; padding: 16px; background: #fff7e6;">
+      <div style="font-weight: bold; color: #F39C12;">💳 Orange Money Cameroun</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">API marchand · webhook + polling de secours · sandbox dispo</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">⚠️ KYC 4-6 semaines · compte marchand entreprise requis</div>
+    </div>
+
+    <div style="border: 2px solid #F39C12; border-radius: 10px; padding: 16px; background: #fff7e6;">
+      <div style="font-weight: bold; color: #F39C12;">💳 MTN MoMo Cameroun</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">MoMo Developer Portal · API Collections · sandbox dispo</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">⚠️ Activation prod = audit MTN, ~3-4 semaines</div>
+    </div>
+
+    <div style="border: 2px solid #F39C12; border-radius: 10px; padding: 16px; background: #fff7e6;">
+      <div style="font-weight: bold; color: #F39C12;">💳 Carte (Visa/Mastercard)</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">Stripe (international) ou GU Money / Smobilpay (local)</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">Optionnel v1 — pour étrangers (135 en 2022)</div>
+    </div>
+
+    <div style="border: 2px solid #16A085; border-radius: 10px; padding: 16px; background: #e8f6f0;">
+      <div style="font-weight: bold; color: #16A085;">⏱️ Prestataire chronométrage</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">À identifier avec TARA · adapter selon : API REST / CSV / FTP / webhook</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">🔴 Bloquant pilier 3 — discussion TARA prioritaire</div>
+    </div>
+
+    <div style="border: 2px solid #0A3D62; border-radius: 10px; padding: 16px; background: #e8f0fb;">
+      <div style="font-weight: bold; color: #0A3D62;">📲 FCM (push)</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">Firebase Cloud Messaging via Expo · iOS + Android · gratuit</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">Compte Firebase au nom de TARA</div>
+    </div>
+
+    <div style="border: 2px solid #0A3D62; border-radius: 10px; padding: 16px; background: #e8f0fb;">
+      <div style="font-weight: bold; color: #0A3D62;">📨 SMS</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">Twilio (international, fiable) OU Orange/MTN SMS API (local, moins cher mais moins de fonctionnalités)</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">~50-100 XAF/SMS · ~250k XAF de budget pour 2500 SMS race-day</div>
+    </div>
+
+    <div style="border: 2px solid #0A3D62; border-radius: 10px; padding: 16px; background: #e8f0fb;">
+      <div style="font-weight: bold; color: #0A3D62;">📧 Email</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">SendGrid (Twilio) · Resend · Brevo · templates MJML</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">DKIM + SPF + DMARC sur mid-cm.com obligatoires</div>
+    </div>
+
+    <div style="border: 2px solid #555; border-radius: 10px; padding: 16px; background: #f5f5f5;">
+      <div style="font-weight: bold; color: #555;">🗺️ Cartographie</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">Mapbox (style custom + offline tiles parcours) · fallback react-native-maps (Apple/Google)</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">Mapbox gratuit jusqu'à 50k MAU</div>
+    </div>
+
+    <div style="border: 2px solid #555; border-radius: 10px; padding: 16px; background: #f5f5f5;">
+      <div style="font-weight: bold; color: #555;">🔐 Supabase Auth</div>
+      <div style="font-size: 12px; color: #555; margin-top: 6px;">Phone OTP +237, email, social (Google, Apple) · JWT validé par NestJS</div>
+      <div style="font-size: 11px; color: #999; margin-top: 6px;">Coût SMS OTP : facturé par Supabase (~50-100€/mois selon volume)</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <p class="label">App stores</p>
+  <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 14px; font-size: 13px; line-height: 1.7;">
+    <strong>Apple App Store</strong> : Apple Developer Program $99/an au nom de TARA Sport and Events (D-U-N-S number requis pour compte entreprise). Review = 1-3 semaines, anticiper rejet sur permissions GPS background → bien justifier.<br>
+    <strong>Google Play Console</strong> : $25 one-time au nom de TARA. Vérification d'entreprise (KYB) introduite récemment. Review ~7 jours.<br>
+    <strong>Distribution interne pilote 2026</strong> : TestFlight (iOS) + Internal App Sharing (Android) pour 50-100 testeurs sans review store.
+  </div>
+</div>

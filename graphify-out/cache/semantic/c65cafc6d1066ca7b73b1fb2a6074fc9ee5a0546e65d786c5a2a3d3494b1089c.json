@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "readme_doc",
+      "label": "Monorepo README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_doc",
+      "target": "design_spec_doc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "Documentation produit et technique",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_doc",
+      "target": "design_spec_monorepo_org",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": "Structure",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

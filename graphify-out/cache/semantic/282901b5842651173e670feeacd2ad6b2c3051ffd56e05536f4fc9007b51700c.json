@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "ci_workflow",
+      "label": "GitHub Actions CI workflow",
+      "file_type": "code",
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ci_job_lint_typecheck",
+      "label": "CI job: Lint & TypeCheck",
+      "file_type": "code",
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "jobs.lint-and-typecheck",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ci_job_test",
+      "label": "CI job: Tests (Postgres + Redis services)",
+      "file_type": "code",
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "jobs.test",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "ci_workflow",
+      "target": "plan1_doc",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "Task 10",
+      "weight": 1.0
+    },
+    {
+      "source": "ci_workflow",
+      "target": "ci_job_lint_typecheck",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "jobs",
+      "weight": 1.0
+    },
+    {
+      "source": "ci_workflow",
+      "target": "ci_job_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "jobs",
+      "weight": 1.0
+    },
+    {
+      "source": "ci_job_lint_typecheck",
+      "target": "turbo_config",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "runs pnpm lint/typecheck (turbo)",
+      "weight": 1.0
+    },
+    {
+      "source": "ci_job_test",
+      "target": "turbo_config",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "runs pnpm test (turbo)",
+      "weight": 1.0
+    },
+    {
+      "source": "ci_job_test",
+      "target": "docker_compose_dev",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": ".github/workflows/ci.yml",
+      "source_location": "Postgres 16 + Redis 7 services mirror docker-compose",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ci_pipeline_stages",
+      "label": "CI pipeline stages",
+      "nodes": ["ci_workflow", "ci_job_lint_typecheck", "ci_job_test", "turbo_config"],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.75,
+      "source_file": ".github/workflows/ci.yml"
+    }
+  ]
+}

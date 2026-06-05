@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "h_husky_hook_dispatcher",
+      "label": "Husky Hook Dispatcher (h)",
+      "file_type": "code",
+      "source_file": ".husky/_/h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "h_husky_hook_dispatcher",
+      "target": "husky_husky_hook_system",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".husky/_/h",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

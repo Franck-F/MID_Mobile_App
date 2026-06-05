@@ -1,0 +1,16 @@
+{
+  "nodes": [],
+  "edges": [
+    {
+      "source": "commit_msg_hook",
+      "target": "commitlint_tool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/commit-msg",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

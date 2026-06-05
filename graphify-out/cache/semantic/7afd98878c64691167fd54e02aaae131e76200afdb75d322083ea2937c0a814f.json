@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "logger_module_logger_module",
+      "label": "LoggerModule (Pino wiring)",
+      "file_type": "code",
+      "source_file": "apps/api/src/logging/logger.module.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "logger_module_logger_module",
+      "target": "pino_config_build_pino_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/logging/logger.module.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "logger_module_logger_module",
+      "target": "env_schema_env_type",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/src/logging/logger.module.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

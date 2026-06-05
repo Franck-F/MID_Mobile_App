@@ -1,0 +1,119 @@
+<h2>Section 5 / 7 — Modèle de données</h2>
+<p class="subtitle">Postgres · ~22 tables · multi-tenancy par édition · audit trail immutable sur paiements</p>
+
+<div class="section">
+  <div class="mockup">
+    <div class="mockup-header">Entités principales et relations</div>
+    <div class="mockup-body" style="padding: 20px; background: #f8f9fb;">
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; font-size: 11px; line-height: 1.5;">
+
+        <div style="background: white; border: 2px solid #0A3D62; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #0A3D62;">👤 User</div>
+          <div style="color: #666; font-family: monospace;">id (uuid, FK Supabase Auth)<br>email, phone, locale<br>display_name, photo_url<br>role (runner/spectator/staff/admin)<br>preferences (jsonb)<br>created_at</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">🏁 Edition</div>
+          <div style="color: #666; font-family: monospace;">id, year, name<br>start_date, end_date<br>registration_open_at<br>registration_close_at<br>status (draft/open/active/closed)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">🏃 Race</div>
+          <div style="color: #666; font-family: monospace;">id, edition_id (FK)<br>category (marathon/half/10k/kids)<br>distance_m, price_xaf<br>capacity, start_time<br>course_id (FK)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">🗺️ Course</div>
+          <div style="color: #666; font-family: monospace;">id, name<br>polyline (geojson)<br>elevation_profile (jsonb)<br>start_lat/lng, finish_lat/lng<br>distance_certified_m</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">📍 Checkpoint</div>
+          <div style="color: #666; font-family: monospace;">id, course_id (FK)<br>name (5K, 10K, 21K…)<br>distance_from_start_m<br>lat, lng<br>order</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">📝 Registration</div>
+          <div style="color: #666; font-family: monospace;">id, user_id, race_id<br>tshirt_size, emergency_contact<br>medical_cert_id (FK)<br>bib_number (assigned post-paiement)<br>status (pending/paid/confirmed/cancelled)<br>team_id (FK nullable)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">🩺 MedicalCertificate</div>
+          <div style="color: #666; font-family: monospace;">id, user_id<br>file_url (S3 OVH)<br>uploaded_at, expires_at<br>validation_status<br>validated_by (staff_id)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">💳 Payment</div>
+          <div style="color: #666; font-family: monospace;">id, registration_id<br>amount_xaf, currency<br>provider (orange_momo/mtn_momo/card)<br>provider_tx_id, idempotency_key<br>status (initiated/pending/succeeded/failed/refunded)<br>initiated_at, completed_at</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #F39C12; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #F39C12;">📒 PaymentAuditLog</div>
+          <div style="color: #666; font-family: monospace;">id, payment_id<br>event_type, payload (jsonb)<br>created_at<br><strong>append-only, jamais modifié</strong></div>
+        </div>
+
+        <div style="background: white; border: 2px solid #16A085; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #16A085;">⏱️ TimingEvent</div>
+          <div style="color: #666; font-family: monospace;">id, registration_id<br>checkpoint_id (FK)<br>recorded_at (timestamp précis)<br>chip_id, raw_payload (jsonb)<br>source (provider/manual)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #16A085; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #16A085;">🏆 Result</div>
+          <div style="color: #666; font-family: monospace;">id, registration_id (unique)<br>finish_time_ms, gun_time_ms<br>net_time_ms (chip)<br>rank_overall, rank_category, rank_gender<br>status (finished/dnf/dq)</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #16A085; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #16A085;">📜 Certificate</div>
+          <div style="color: #666; font-family: monospace;">id, registration_id<br>pdf_url (S3 OVH signé)<br>generated_at<br>template_version</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #e74c3c; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #e74c3c;">📡 PositionGPS</div>
+          <div style="color: #666; font-family: monospace;">id, registration_id<br>lat, lng, accuracy_m<br>recorded_at, received_at<br>battery_pct, source<br><strong>partitionné par jour</strong></div>
+        </div>
+
+        <div style="background: white; border: 2px solid #e74c3c; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #e74c3c;">💬 Cheer</div>
+          <div style="color: #666; font-family: monospace;">id, from_user_id, to_registration_id<br>message (text, max 200 chars)<br>created_at, delivered_at<br>delivery_status</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #e74c3c; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #e74c3c;">👀 Subscription</div>
+          <div style="color: #666; font-family: monospace;">id, spectator_user_id<br>tracked_registration_id<br>nickname (ex: "Papa")<br>created_at</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #555; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #555;">📲 Notification</div>
+          <div style="color: #666; font-family: monospace;">id, user_id<br>channel (push/sms/email)<br>template_key, payload (jsonb)<br>status, sent_at<br>locale</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #555; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #555;">📰 NewsPost</div>
+          <div style="color: #666; font-family: monospace;">id, edition_id<br>title_fr, title_en<br>body_fr, body_en<br>cover_url, published_at</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #555; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #555;">🤝 Sponsor</div>
+          <div style="color: #666; font-family: monospace;">id, edition_id<br>name, logo_url, website_url<br>tier (gold/silver/bronze/partner)<br>display_order</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #555; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #555;">🎟️ PromoCode</div>
+          <div style="color: #666; font-family: monospace;">id, code (unique), edition_id<br>discount_pct ou discount_xaf<br>max_uses, current_uses<br>valid_from, valid_until</div>
+        </div>
+
+        <div style="background: white; border: 2px solid #555; border-radius: 8px; padding: 10px;">
+          <div style="font-weight: bold; color: #555;">👥 Team</div>
+          <div style="color: #666; font-family: monospace;">id, name, captain_user_id<br>edition_id, type (corporate/club/family/cause)<br>logo_url, cause_label</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <p class="label">Tables additionnelles (v1.1+)</p>
+  <p style="font-size: 13px; color: #666;"><code>Club</code>, <code>ClubMembership</code>, <code>TrainingPlan</code>, <code>Workout</code>, <code>UserStats</code> (lifetime), <code>Photo</code> (tagged by bib), <code>ExpoBooth</code> — différés en post-v1.</p>
+</div>

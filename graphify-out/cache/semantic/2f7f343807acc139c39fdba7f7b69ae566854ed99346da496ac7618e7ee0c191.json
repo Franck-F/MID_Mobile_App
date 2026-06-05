@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "vitest_config_sharedtypes",
+      "label": "shared-types vitest.config.ts",
+      "file_type": "code",
+      "source_file": "packages/shared-types/vitest.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "vitest_config_sharedtypes",
+      "target": "sharedtypes_pkg",
+      "relation": "configures",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "packages/shared-types/vitest.config.ts",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "vitest_config_sharedtypes",
+      "target": "racecategory_test",
+      "relation": "configures",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "packages/shared-types/vitest.config.ts",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "id": "package_mid_api",
+      "label": "@mid/api package",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_mid_shared_types",
+      "label": "@mid/shared-types (workspace dep)",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_nestjs_framework",
+      "label": "NestJS Framework",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_prisma_orm",
+      "label": "Prisma ORM",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_bullmq_queue",
+      "label": "BullMQ Job Queue",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_pino_logger",
+      "label": "Pino / nestjs-pino Logger",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_sentry_monitoring",
+      "label": "Sentry Error Monitoring",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_zod_validation",
+      "label": "Zod Schema Validation",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_vitest_test_runner",
+      "label": "Vitest Test Runner",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_testcontainers",
+      "label": "Testcontainers (Postgres/Redis)",
+      "file_type": "code",
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "package_mid_api",
+      "target": "package_mid_shared_types",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_nestjs_framework",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_prisma_orm",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_bullmq_queue",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_pino_logger",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_sentry_monitoring",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_zod_validation",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_vitest_test_runner",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_testcontainers",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_mid_api",
+      "target": "package_nestjs_framework",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_bullmq_queue",
+      "target": "package_testcontainers",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "package_vitest_test_runner",
+      "target": "package_testcontainers",
+      "relation": "depends_on",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "apps/api/package.json",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "api_backend_runtime_stack",
+      "label": "API Backend Runtime Stack",
+      "nodes": [
+        "package_nestjs_framework",
+        "package_prisma_orm",
+        "package_bullmq_queue",
+        "package_pino_logger",
+        "package_zod_validation"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "apps/api/package.json"
+    },
+    {
+      "id": "api_integration_test_stack",
+      "label": "API Integration Test Stack",
+      "nodes": ["package_vitest_test_runner", "package_testcontainers", "package_mid_api"],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "apps/api/package.json"
+    }
+  ]
+}
