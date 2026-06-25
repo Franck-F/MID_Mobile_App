@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@mid/eslint-config": "workspace:*",
-    "eslint": "^9.15.0",
+    "eslint": "^10.4.1",
     "typescript": "^5.6.3",
     "vitest": "^2.1.5",
     "rimraf": "^6.0.1"
